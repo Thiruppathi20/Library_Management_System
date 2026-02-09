@@ -11,7 +11,7 @@ public class DBUtil {
 
         String url = "jdbc:oracle:thin:@localhost:1521:xe";
         String user = "system";
-        String pass = "150505";
+        String pass = "1234567890";
 
         Connection con = DriverManager.getConnection(url, user, pass);
         con.setAutoCommit(false);

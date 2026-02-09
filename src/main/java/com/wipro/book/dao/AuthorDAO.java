@@ -24,7 +24,7 @@ public class AuthorDAO {
                 author = new AuthorBean();
                 author.setAuthorCode(rs.getInt("Author_code"));
                 author.setAuthorName(rs.getString("Author_name"));
-                author.setContactNo(rs.getLong("Contact_no"));
+                author.setContactNo(rs.getLong("Contact_number"));
             }
 
         } catch (Exception e) {
@@ -49,7 +49,7 @@ public class AuthorDAO {
                 author = new AuthorBean();
                 author.setAuthorCode(rs.getInt("Author_code"));
                 author.setAuthorName(rs.getString("Author_name"));
-                author.setContactNo(rs.getLong("Contact_no"));
+                author.setContactNo(rs.getLong("Contact_number"));
             }
 
         } catch (Exception e) {
