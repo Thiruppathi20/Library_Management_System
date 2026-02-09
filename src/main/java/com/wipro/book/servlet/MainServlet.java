@@ -69,6 +69,7 @@ public class MainServlet extends HttpServlet {
         String authorName = request.getParameter("author");
         String costStr = request.getParameter("bookcost");
 
+        
         try {
             float cost = Float.parseFloat(costStr);
 
@@ -89,6 +90,7 @@ public class MainServlet extends HttpServlet {
             return book;
 
         } catch (Exception e) {
+        	e.printStackTrace();
             return null;
         }
     }

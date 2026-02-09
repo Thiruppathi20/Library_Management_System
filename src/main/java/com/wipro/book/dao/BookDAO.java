@@ -10,31 +10,25 @@ import com.wipro.book.util.DBUtil;
 
 public class BookDAO {
 
-    public BookBean createBook(BookBean bookBean) {
-
-        String sql = "INSERT INTO Book_tbl (ISBN, BOOK_TITLE, BOOK_TYPE, AUTHOR_CODE, BOOK_COST) VALUES (?,?,?,?,?)";
-
-        try (Connection con = DBUtil.getDBConnection();
-             PreparedStatement ps = con.prepareStatement(sql)) {
-
-            ps.setString(1, bookBean.getIsbn());
-            ps.setString(2, bookBean.getBookName());
-            ps.setString(3, String.valueOf(bookBean.getBookType()));
-            ps.setInt(4, bookBean.getAuthor().getAuthorCode());
-            ps.setFloat(5, bookBean.getCost());
-
-            int rows = ps.executeUpdate();
-
-            if (rows > 0) {
-                return fetchBook(bookBean.getIsbn());
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        return null;
-    }
+	public BookBean createBook(BookBean bookBean) {
+	    String sql = "INSERT INTO Book_tbl (ISBN, BOOK_TITLE, BOOK_TYPE, AUTHOR_CODE, BOOK_COST) VALUES (?,?,?,?,?)";
+	    try (Connection con = DBUtil.getDBConnection();
+	         PreparedStatement ps = con.prepareStatement(sql)) {
+	        ps.setString(1, bookBean.getIsbn());
+	        ps.setString(2, bookBean.getBookName());
+	        ps.setString(3, String.valueOf(bookBean.getBookType()));
+	        ps.setInt(4, bookBean.getAuthor().getAuthorCode());
+	        ps.setFloat(5, bookBean.getCost());
+	        int rows = ps.executeUpdate();
+	        if (rows > 0) {
+	            con.commit();
+	            return fetchBook(bookBean.getIsbn());
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+	    return null;
+	}
 
     public BookBean fetchBook(String isbn) {
 
