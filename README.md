@@ -7,7 +7,7 @@ This project allows users to:
    .📖 View all books
 
 🚀 Features
-  .Add Book Details (Book ID, Name, Author, Price, etc.)
-  .View List of All Books
-  .Oracle 11g Database Integration
-  .Basic Input Validation
+  1.Add Book Details (Book ID, Name, Author, Price, etc.)
+  2.View List of All Books
+  3.Oracle 11g Database Integration
+  4.Basic Input Validation
