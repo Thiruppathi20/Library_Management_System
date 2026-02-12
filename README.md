@@ -20,3 +20,14 @@ This project allows administrators to add books and view books stored in the dat
    JDBC
    Apache Tomcat
    HTML & CSS
+
+MAIN MENU PAGE:
+    <img width="1223" height="408" alt="image" src="https://github.com/user-attachments/assets/3a829330-9f25-433d-8256-d84b5768e8b8" />
+
+ADD BOOK PAGE:
+   <img width="674" height="655" alt="image" src="https://github.com/user-attachments/assets/6fa45c87-2973-4a4b-b659-f0541e4c42da" />
+
+VIEW BOOK PAGE:
+   <img width="723" height="337" alt="image" src="https://github.com/user-attachments/assets/d2fc17dc-d88b-4b09-9bba-48854bbc9c29" />
+
+
