@@ -1,13 +1,22 @@
 📚 Library Management System
-      A simple Library Management System built using Java, JSP, Servlets, JDBC, and Oracle 11g.
-      
-This project allows users to:
 
-   .➕ Add new books
-   .📖 View all books
+A simple Java Servlet + JSP + Oracle 11g based web application to manage books in a library.
+This project allows administrators to add books and view books stored in the database.
 
 🚀 Features
-  1.Add Book Details (Book ID, Name, Author, Price, etc.)
-  2.View List of All Books
-  3.Oracle 11g Database Integration
-  4.Basic Input Validation
+
+   ➕ Add new books
+   📖 View all books
+   🗄️ Oracle 11g database integration
+   🔗 JDBC connectivity
+   🌐 Servlet-based backend
+   🖥️ JSP frontend
+
+🛠️ Technologies Used
+
+   Java 8
+   Servlet & JSP
+   Oracle 11g
+   JDBC
+   Apache Tomcat
+   HTML & CSS
